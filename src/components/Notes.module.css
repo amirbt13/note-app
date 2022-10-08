@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    width: 1200px;
+    margin: auto;
+}
+.noteCard {
+    margin-top: 70px;
+    width: 300px;
+    min-height: 400px;
+    background-color: rgb(250, 228, 120);
+}
+.noteCard input {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgb(250, 228, 120);
+    font-size: 1.6em;
+    border: none;
+    outline: none;
+}
+.noteCard textarea {
+    padding: 8px;
+    max-width: 80%;
+    min-width: 75%;
+    max-height: 260px;
+    min-height: 260px;
+    margin: 10px auto;
+    background-color: rgb(250, 228, 120);
+    display: block;
+    border: none;
+    resize: none;
+    line-height: 1rem;
+    background-image: linear-gradient(transparent, transparent calc(2rem - 1px), #010c19 0px);
+    background-size: 100% 2rem;
+    outline: none;
+}
+.noteCard button {
+    position: relative;
+    left: 235px;
+    top: 15px;
+}
