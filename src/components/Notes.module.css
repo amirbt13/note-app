@@ -1,20 +1,22 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     width: 1200px;
     margin: auto;
+    margin-bottom: 30px;
 }
 .noteCard {
     margin-top: 70px;
     width: 300px;
     min-height: 400px;
-    background-color: rgb(250, 228, 120);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px grey;
 }
+
 .noteCard input {
     margin-left: 20px;
     margin-top: 10px;
     padding: 5px;
-    background-color: rgb(250, 228, 120);
     font-size: 1.6em;
     border: none;
     outline: none;
@@ -26,17 +28,29 @@
     max-height: 260px;
     min-height: 260px;
     margin: 10px auto;
-    background-color: rgb(250, 228, 120);
     display: block;
     border: none;
     resize: none;
-    line-height: 1rem;
+    line-height: 2rem;
     background-image: linear-gradient(transparent, transparent calc(2rem - 1px), #010c19 0px);
     background-size: 100% 2rem;
     outline: none;
 }
 .noteCard button {
     position: relative;
-    left: 235px;
+    cursor: pointer;
+    left: 230px;
     top: 15px;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 13px;
+}
+.noteCard:nth-child(1){
+    background-color: rgb(149, 251, 251);
+}
+.noteCard:nth-child(1) input{
+    background-color: rgb(149, 251, 251);
+}
+.noteCard:nth-child(1) textarea{
+    background-color: rgb(149, 251, 251);
 }

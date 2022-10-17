@@ -1,0 +1,46 @@
+.noteCard {
+    margin-top: 70px;
+    width: 300px;
+    min-height: 400px;
+    background-color: rgb(253, 241, 156);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px grey;
+    position: relative;
+}
+.noteCard h4 {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1.6em;
+}
+.noteCard p {
+    padding: 8px;
+    max-width: 80%;
+    min-width: 75%;
+    max-height: 260px;
+    min-height: 260px;
+    margin: 10px auto;
+    line-height: 2rem;
+}
+.deleteBtn {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: bolder;
+    color: red;
+    border-radius: 50%;
+    transition: all .2s ease;
+    font-size: 1.1rem;
+}
+.deleteBtn:hover {
+    width: 30px;
+    height: 30px;
+    font-size: larger; 
+    right: 15px;
+    top: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
