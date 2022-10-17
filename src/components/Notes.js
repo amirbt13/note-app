@@ -3,14 +3,14 @@ import Note from './Note'
 import styles from './Notes.module.css'
 import uniqid from 'uniqid'
 
-const Notes = () => {
+const Notes = ({ notes, setNotes }) => {
 
     const [fields, setFields] = useState({
       title: "New Note",
       main: ""
     })
 
-    const [notes, setNotes] = useState([])
+    
 
     const changeHandler = (event) => {
       setFields(prevFields => {
@@ -26,7 +26,10 @@ const Notes = () => {
         console.log(notes)
         return [
           ...prevNotes,
-          {...fields, id: uniqid()}
+          {...fields, 
+            id: uniqid(),
+            isShown: true
+          }
         ]
       })
       setFields({

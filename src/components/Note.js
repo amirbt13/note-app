@@ -3,7 +3,7 @@ import styles from './Note.module.css'
 
 const Note = ({ note, deleteNote }) => {
   return (
-    <div className={styles.noteCard}>
+    <div className={styles.noteCard} style={note.isShown ? {display:"Block"} : {display:"none"}}>
         <h4>{note.title}</h4>
         <p>{note.main}</p>
         <div className={styles.deleteBtn} onClick={() => deleteNote(note.id)}>X</div>
