@@ -1,7 +1,7 @@
 .noteCard {
     margin-top: 70px;
     width: 300px;
-    min-height: 400px;
+    height: 400px;
     background-color: rgb(253, 241, 156);
     border-radius: 10px;
     box-shadow: 3px 3px 6px grey;
@@ -15,10 +15,8 @@
 }
 .noteCard p {
     padding: 8px;
-    max-width: 80%;
-    min-width: 75%;
-    max-height: 260px;
-    min-height: 260px;
+    width: 80%;
+    height: 260px;
     margin: 10px auto;
     line-height: 2rem;
 }
@@ -40,7 +38,17 @@
     height: 30px;
     font-size: larger; 
     right: 15px;
-    top: 18px;
+    top: 19px;
     cursor: pointer;
     transition: all 0.2s ease-in;
+}
+
+@media (max-width: 1300px) {
+    .noteCard {
+        width: 200px;
+        height: 300px;
+    }
+    .noteCard h4 {
+        font-size: 1.4em;
+    }
 }

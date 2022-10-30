@@ -7,4 +7,13 @@
 .container input {
     width: 100%;
     padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
 }
